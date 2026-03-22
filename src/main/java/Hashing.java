@@ -33,8 +33,8 @@ public class Hashing {
         String saltBase64 = Base64.getEncoder().encodeToString(salt);
         String hashBase64 = Base64.getEncoder().encodeToString(hash);
 
-        String hashedPassword = String.format("%s:%s:%d:%d",saltBase64,hashBase64,Iteration,KEY_LENGHT);
+      return String.format("%s:%s:%d:%d",saltBase64,hashBase64,Iteration,KEY_LENGHT);
 
-        return hashedPassword;
     }
+
 }
